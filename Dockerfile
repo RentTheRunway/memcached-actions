@@ -1,5 +1,4 @@
-FROM docker:stable
-LABEL MAINTAINER="KeisukeYamashita<19yamashita15@gmail.com>"
+FROM artifactory.rtr.cloud/docker/docker:stable
 
 COPY entrypoint.sh /entrypoint.sh
 RUN apk add bash && chmod +x /entrypoint.sh
