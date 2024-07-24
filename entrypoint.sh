@@ -12,7 +12,7 @@ IFS="$OIFS"
 
 for port in "${ports[@]}"
 do
-    docker run --name memcached-"${port}" -p "${port}":11211 --detach memcached > /dev/null
+    docker run --name artifactory.rtr.cloud/docker/memcached-"${port}" -p "${port}":11211 --detach artifactory.rtr.cloud/docker/memcached > /dev/null
     echo "[INFO] Run memcached on port ${port}"
 done
 
